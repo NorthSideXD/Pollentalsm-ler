@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollen Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pollen Concentration Monitor</h1>
+        <div class="pollen-selector">
+            <button class="pollen-btn active" data-type="tree">Tree Pollen</button>
+            <button class="pollen-btn" data-type="grass">Grass Pollen</button>
+            <button class="pollen-btn" data-type="weed">Weed Pollen</button>
+        </div>
+        <div id="visualization"></div>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box low"></div>
+                <span class="risk-label">Low Risk</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box medium"></div>
+                <span class="risk-label">Medium Risk</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box high"></div>
+                <span class="risk-label">High Risk</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box very-high"></div>
+                <span class="risk-label">Very High Risk</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
